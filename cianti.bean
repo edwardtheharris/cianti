@@ -1,0 +1,13 @@
+2018-01-01 open Assets:Checking:Bank
+
+2018-01-01 open Expenses:Diamonds:BananaBerry
+
+2018-01-01 open Equity:Opening
+
+2018-01-01 txn "Opening Balance" "I might move to Mexico."
+  Assets:Checking:Bank  500000.00 USD
+  Equity:Opening
+
+2018-01-02 txn "Jewler of Some Regard" "Don't want none of that middle of the mall nonsense."
+  Expenses:Diamonds:BananaBerry 250000.00 USD
+  Assets:Checking:Bank
