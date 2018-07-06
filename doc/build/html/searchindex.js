@@ -1,0 +1,1 @@
+Search.setIndex({docnames:["index"],envversion:53,filenames:["index.rst"],objects:{},objnames:{},objtypes:{},terms:{document:0,dunno:0,here:0,index:0,modul:0,need:0,page:0,project:0,search:0,sphinx:0,thei:0,thi:0,what:0},titles:["Fava Beans with a Nice Cianti"],titleterms:{bean:0,cianti:0,fava:0,indic:0,nice:0,tabl:0}})
