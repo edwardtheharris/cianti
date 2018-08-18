@@ -1,7 +1,7 @@
 FROM alpine:latest
 RUN apk add --no-cache alpine-sdk bash git libxml2-dev libxslt-dev python3 python3-dev py3-pip vim
 RUN pip3 install --upgrade pip
-RUN pip3 install --no-cache-dir beancount fava 
+RUN pip3 install --no-cache-dir beancount fava beancount-plugins fava-plugins
 RUN mkdir -p /srv/fava
 EXPOSE 5000
 COPY cianti.bean /srv/fava/cianti.bean
