@@ -1,9 +1,11 @@
 ---
+language: python
 sudo: required
 services: docker
 before_install:
   - docker build -t a-nice-cianti .
-  - docker run --name a-nice-cianti -d -p 5000:5000 a-nice-cianti 
+  - docker run --name a-nice-cianti -d -p 5000:5000 a-nice-cianti
 script:
   - docker logs a-nice-cianti
+  - docker rm -f a-nice-cianti
 ...
