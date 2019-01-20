@@ -1,4 +1,5 @@
 ---
+language: python
 env:
   - CIANTI_JOURNAL_FILE=/srv/fava/cianti.bean
   - CIANTI_JOURNAL_DIR=/srv/fava
