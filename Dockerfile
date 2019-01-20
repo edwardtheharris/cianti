@@ -10,6 +10,7 @@ RUN pip3 install --no-cache-dir beancount fava
 RUN mkdir -p ${CIANTI_JOURNAL_DIR}
 COPY cianti.bean ${CIANTI_JOURNAL_FILE}
 
+VOLUME ${CIANTI_JOURNAL_DIR}
 EXPOSE 5000
 
 CMD /usr/bin/fava -d --host 0.0.0.0 ${CIANTI_JOURNAL_FILE} 
