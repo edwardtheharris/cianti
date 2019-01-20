@@ -1,8 +1,7 @@
 ---
 language: python
 env:
-  - CIANTI_JOURNAL_FILE=/srv/fava/cianti.bean
-  - CIANTI_JOURNAL_DIR=/srv/fava
+  - CIANTI_JOURNAL_FILE=/srv/fava/cianti.bean CIANTI_JOURNAL_DIR=/srv/fava
 sudo: required
 services: docker
 before_install:
