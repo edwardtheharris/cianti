@@ -10,9 +10,8 @@ RUN apk add --no-cache alpine-sdk bash git libxml2-dev libxslt-dev python3 pytho
 RUN git clone https://github.com/edwardtheharris/beancount /srv/beancount
 RUN pip3 install --upgrade pip
 RUN pip3 install -e /srv/beancount
-RUN pip3 install --no-cache-dir fava 
-
-VOLUME $CIANTI_JOURNAL_DIR
+RUN pip3 install --no-cache-dir fava fava-plugins
+RUN mkdir -p /srv/fava
 EXPOSE 5000
 
 CMD /usr/bin/fava -d --host 0.0.0.0 $CIANTI_JOURNAL_FILE
